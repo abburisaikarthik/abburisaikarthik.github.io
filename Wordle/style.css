@@ -1,0 +1,122 @@
+:root
+{
+    --bgcolor:black;
+    --borderColor: #ffffff;
+    --size: 3rem;
+}
+
+
+*
+{
+    margin:0;
+    padding :0; 
+     box-sizing: border-box; 
+}
+body
+{
+    width: 100%;
+background-color: black;
+height: 100vh;
+display: flex;
+flex-direction: column;
+
+
+}
+.words
+{
+    width: 100%;
+}
+.word-container
+{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position:absolute;
+   top: 3rem;
+}
+.row
+{
+display: flex;
+flex-direction: row;
+}
+.cell
+{
+    border: 1px solid white;
+    width: var(--size);
+    height: var(--size);
+    margin:1px 1px;
+    border-radius: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.keyboard
+{
+    width: 100%;
+}
+
+.keyboard-conatiner
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+   top: 26rem;
+   left : 1rem
+   
+}
+.keyboard button
+{
+background-color: var(--bgcolor);
+color: #ffffff;
+outline: none;
+border: 1px solid  #353535;
+padding :calc(var(--size)*0.4);
+cursor: pointer;
+margin: 1px 1px;
+border-radius: 10px;
+}
+
+.cell-green
+{
+    background-color: #6d9e23;
+color: white;
+}
+.cell-red
+{
+    background-color: #d41616;
+    color: white;
+}
+.cell-orange
+{
+    background-color: orange;
+color: white;
+
+}
+.by
+{
+    color: #ffffff;
+    position: absolute;
+   font-size: x-large;
+    top: 30rem;
+    right: 5rem;
+    padding: 10px;
+    border: 1px solid white;
+    
+}
+.wordle
+{
+color:black;
+font-size:xx-large;
+position: absolute;
+top: 22rem;
+left: 39rem;
+padding: 5px;
+background-color: #ffffff;
+border: 2px solid white;
+}
