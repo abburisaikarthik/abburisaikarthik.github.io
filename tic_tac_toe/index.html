@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+	<link rel = "icon" href = "f.png" type = "image/x-icon">
+</head>
+<body>
+	
+	<h1>Tic-Tac-Toe</h1>
+
+	<div class="game-area">
+		<div></div>
+
+		<div class="game-options">
+			<div>
+				<select name="game_type" id="game_type" onchange="resetAIButton()">
+					<option value="3">3 x 3</option>
+					<option value="4">4 x 4</option>
+					<option value="5">5 x 5</option>
+				</select>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="robot" checked="true" id="robot" class="form-check-input"/> 
+				<label class="form-check-label" for="anime"> AI </label>
+			</div>
+			<div>
+				<input type="submit" value="Start" onclick="generateGame()" class="submit-button"> 
+				<input type="submit" value="Reset" onclick="generateGame()" class="submit-button">
+		    </div>
+			<div class="score-card">
+				X's score: <span id="score-X">0</span> &nbsp;
+				Y's score: <span id="score-Y">0</span>
+			</div>
+		</div>
+		<div id="game-board" class="game-board"></div>
+	    
+	</div>
+	
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
